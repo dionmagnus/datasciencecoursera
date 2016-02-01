@@ -1,6 +1,6 @@
 # Human Activity Recognition Data Set
 
-This is a discription of human activity data, collected by Samsung smartphone during human activity recognition experiments.
+This is a discription of human activity data, collected by a Samsung smartphone during human activity recognition experiments.
 It is based on the data provied at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 There are two datasets in the initial files. Train and test datasets.
 The first step in the currect data proxessing is to merge these datasets together. The merged dataset contains 10266 observations. 
@@ -71,12 +71,13 @@ Then only means and stds of which variables are selected. There are 66 features 
 * "fBodyBodyAccJerkMag-std()"
 * "fBodyBodyGyroMag-std()"
 * "fBodyBodyGyroJerkMag-std()"
+
 There are the types of physical variables measured here. Accreleration is measured in "g", and angular velocity is measured in radians/second.
-The *feateresDataset*, which is created during a run of the analysis script, contains 10266 rows, one row per observation and 68 columns.
+The *featuresDataset*, which is created during a run of the analysis script, contains 10266 rows, one row per observation and 68 columns.
 The first column is the data set is the subject id. 30 people took part in the experiments, and each of them had been assigned an id. This id is on the fitst column in the dataset. The second colunm corresponds
 to an activity. There were 6 activities like SITTING, LAYING WALKING etc. Another 66 columns in the dataset are collected features.
 
-The next step in the data processing is grouping data by subject and activity. Tha dataset is called *groupedData*. It consists of 180 rows, one row per an activity/subject combination and 68 columns. 
+The next step in the data processing is grouping data by subject and activity. The dataset is called *groupedData*. It consists of 180 rows, one row per an activity/subject combination and 68 columns. 
 The colums are the same as for the first dataset, but now they containg average values for a given subject and activity combination.
 
 
