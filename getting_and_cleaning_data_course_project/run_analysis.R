@@ -41,4 +41,8 @@ featuresDataset <- cbind(subjectDataset, activityFactor, featuresDataset)
 
 #grouping data by an activity labels and a subject
 groupedData <- featuresDataset %>% group_by(subject, activityFactor) %>% summarise_each(funs(mean))
+if(!dir.exists("processed_data")) { dir.create("processed_data")}
+
+write.table(featuresDataset, 'processed_data/featuresDataset.txt', row.names = FALSE)
+write.table(groupedData, 'processed_data/groupedData.txt', row.names = FALSE)
 

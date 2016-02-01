@@ -5,6 +5,7 @@ This is a course project for th coursera.org MOOC "Getting and cleaning data"
 ## Directory contents
 
 * "UCI HAR Dataset" - raw data directory
+* processed_data - result data directory
 * run_analysis.R - the analysis R sourse file
 
 ## Usage
@@ -14,9 +15,5 @@ How to run an analysis and view results
 2. Run the run_analysis.R file
 3. After the analysis will finish, two dataset will be creatred "featuresDataset" and "groupData". The former one contains means and stds featurews for all observations,
 the later one containg grouped by activity and subject data.
-
-
-
-
-
+4. The datasets are stored to the *processed_data* directory.
 

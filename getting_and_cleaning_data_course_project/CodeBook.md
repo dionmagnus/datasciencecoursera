@@ -80,4 +80,4 @@ to an activity. There were 6 activities like SITTING, LAYING WALKING etc. Anothe
 The next step in the data processing is grouping data by subject and activity. The dataset is called *groupedData*. It consists of 180 rows, one row per an activity/subject combination and 68 columns. 
 The colums are the same as for the first dataset, but now they containg average values for a given subject and activity combination.
 
-
+The two final datasets are stored to text files under a *processed_data* directory. The files are called *featuresDataset.txt* and *groupedData.txt* respectivly. 
